@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+    <link rel="icon" href="./assets/logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Emergency Sevice</title>
+</head>
+
+<body>
+    <header class="top-0 left-0 right-0 z-50">
+        <nav
+            class="flex flex-wrap md:flex-nowrap items-center justify-between w-full md:max-w-[1440px] mx-auto px-4 md:px-8 py-4 md:py-6 gap-4">
+            <!-- Logo + Title -->
+            <div class="flex items-center gap-x-2 md:gap-x-3">
+                <img src="./assets/logo.png" alt="logo" class="w-10 md:w-12" />
+                <h1 class="text-[#006747] text-[16px] md:text-[20px] font-extrabold leading-tight">
+                    Emergency <br />
+                    Service
+                </h1>
+            </div>
+
+            <!-- Stats -->
+            <div class="flex flex-wrap md:flex-nowrap items-center gap-3 md:gap-5">
+                <!-- Heart -->
+                <div
+                    class="flex items-center justify-center px-3 md:px-5 py-2 md:py-3 rounded-full bg-green-100 gap-x-2">
+                    <span id="heart-count"
+                        class="font-bold text-sm md:text-base inline-block text-center min-w-[24px]">0</span>
+                    <img src="./assets/heart.png" alt="heart" class="w-6 md:w-7" />
+                </div>
+
+                <!-- Coin -->
+                <div
+                    class="flex items-center justify-center px-3 md:px-5 py-2 md:py-3 rounded-full bg-green-100 gap-x-2">
+                    <span id="coin-count"
+                        class="font-bold text-sm md:text-base inline-block text-center min-w-[24px] ">100</span>
+                    <img src="./assets/coin.png" alt="coin" class="w-6 md:w-7" />
+                </div>
+
+                <!-- Copy -->
+                <div
+                    class="flex items-center justify-center px-3 md:px-5 py-2 md:py-3.5 rounded-full bg-[#00A63E] gap-x-2">
+                    <h1 class="font-bold text-white text-sm md:text-base inline-block text-center min-w-[24px]">
+                        <span id="copy-count">0</span> Copy
+                    </h1>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- hero section -->
+    <section
+        class="py-6 md:py-10 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]  flex flex-col items-center gap-3 px-4 text-center">
+        <img src="./assets/logo-dark.png" alt="hero-img" class="w-20 md:w-28">
+        <h1 class="text-2xl md:text-4xl font-bold text-white"> Emergency Service Directory</h1>
+        <p class="text-base md:text-xl font-semibold text-white"> Government Emergency Services at Your Fingertip - A
+            Project by
+            Government of the People's Republic of Bangladesh</p>
+    </section>
+
+    <!-- js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
