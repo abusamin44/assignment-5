@@ -48,7 +48,7 @@ for (let i = 0; i < callBtn.length; i++) {
       timeZone: "Asia/Dhaka",
     });
 
-    
+
 
     const parentCardContent = document.getElementById("parent-card");
     const cardContent = document.createElement("div");
@@ -73,4 +73,25 @@ clearBtn.addEventListener("click", function () {
   parentCardContent.innerHTML = "";
 });
 
+
+
+
+// copy functionality added
+const copyButtons = document.getElementsByClassName("copy-btn");
+const numbers = document.getElementsByClassName("number");
+let copyCount = parseInt(document.getElementById("copy-count").innerText);
+
+for (let i = 0; i < copyButtons.length; i++) {
+  const buttons = copyButtons[i];
+  const number = numbers[i].innerText;
+
+  buttons.addEventListener("click", function () {
+    navigator.clipboard.writeText(number).catch((err) => {
+      console.error("Failed to copy text: ", err);
+    });
+    copyCount++;
+    document.getElementById("copy-count").innerText = copyCount;
+  });
+
+}
 
